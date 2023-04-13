@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
-    background-color: black;
+    background: url("imagens/pexels-grafixartphoto-samir-belhamra-4254548.jpg") fixed;
 }
 
 header {
@@ -21,26 +21,27 @@ header > h1 {
 header > p {
     text-align: center;
     color: white;
-}
-
-menu {
-    background-color: skyblue;
-    padding: 10px;
-    margin-top: -1px;
-}
-
-menu > a {
-    color: blue;
-    text-decoration: none;
-    text-align: justify;
     font-weight: bold;
-    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-a:hover {
+nav {
+    background-color: skyblue;
+    color: blue;
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+nav > a {
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: 1s;
+}
+
+nav > a:hover {
     background-color: darkblue;
     color: white;
-    padding: 10px;
 }
 
 main {
@@ -48,6 +49,15 @@ main {
     margin: auto;
     padding: 10px;
     border-radius: 12px;
+    width: 800px; 
+}
+
+main > p {
+    margin: 15px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
 }
 
 footer {
@@ -56,4 +66,25 @@ footer {
     text-align: center;
     padding: 3px;
     border-radius: 10px;
+}
+
+article {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+article > p {
+    margin: 15px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+aside > p {
+    margin: 15px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
 }
