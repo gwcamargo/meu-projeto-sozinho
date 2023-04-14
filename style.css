@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 body {
     background: url("imagens/pexels-grafixartphoto-samir-belhamra-4254548.jpg") fixed;
 }
@@ -45,15 +47,23 @@ nav > a:hover {
 }
 
 main {
-    background-color: white;    
+    background-color: rgba(62, 60, 60, 0.449);    
     margin: auto;
     padding: 10px;
     border-radius: 12px;
     width: 800px; 
 }
 
+main > h2 {
+    color: blue;
+    padding: 10px;    
+    font-family: 'Audiowide', cursive;
+    background-image: linear-gradient(to right, white, transparent);
+}
+
 main > p {
     margin: 15px;
+    color: white;
     text-align: justify;
     text-indent: 30px;
     font-size: 1em;
@@ -69,16 +79,39 @@ footer {
 }
 
 article {
-    background-color: lightgray;
-    padding: 20px;
+    background-color: rgba(211, 211, 211, 0.411);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+article > h1 {
+    background-image: linear-gradient(to right, white, transparent);
+    color: blue;
+    padding: 10px;
+    font-family: 'Audiowide', cursive;
 }
 
 article > p {
+    color: white;
     margin: 15px;
     text-align: justify;
     text-indent: 30px;
     font-size: 1em;
     line-height: 2em;
+}
+
+aside {
+    padding: 15px;
+    color: white;
+    background-color: rgba(211, 211, 211, 0.411);
+    border-radius: 10px;
+}
+
+aside > h3 {
+    color: blue;
+    padding: 10px;
+    font-family: 'Audiowide', cursive;
+    background-image: linear-gradient(to right, white, transparent);
 }
 
 aside > p {
