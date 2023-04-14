@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+        body{
+            background: url("imagens/pexels-grafixartphoto-samir-belhamra-4254548.jpg") fixed;
+        }
+
+        main {
+            background-color: rgba(4, 3, 3, 0.449);
+            color: white;
+            width: 400px;
+            border-radius: 20px;
+            padding: 15px;
+            margin: auto;
+        }
+
+        h1 {
+            font-family: 'Audiowide', cursive;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Cadastre-se</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" placeholder="Insira seu nome" required>
+            </p>
+            <p>
+                <label for="idata">Data de Nascimento: </label>
+                <input type="date" name="data" id="idata" required>
+            </p>
+            <p>
+                <label for="iend">Endereço: </label>
+                <input type="text" name="end" id="iend" placeholder="Insira seu endereço" required>
+            </p>
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="number" name="tel" id="itel" placeholder="Insira seu telefone" required>
+            </p>
+            <p>
+                <label for="icidade">Cidade: </label>
+                <input type="text" name="cidade" id="icidade" placeholder="Insira sua cidade" required>
+            </p>
+            <p>
+                <label for="iestado">Estado: </label>
+                <select name="estado" id="iestado">
+                    <option value="" selected>--- Escolha ---</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="ES">Espírito Santo</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="PI">Piauí</option>
+                        <option value="PE">Pernambuco</option>
+                    </optgroup>
+                    <optgroup label="Região Norte">
+                        <option value="PA">Pará</option>
+                        <option value="AM">Amapá</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="RO">Roraima</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="imen">Mensagem: </label> <br>
+                <textarea name="mensagem" id="imen" cols="30" rows="10" placeholder="Deixe seu recado"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>
+</body>
+</html>
